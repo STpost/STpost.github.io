@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $(".button").click(function () {
+    $(".tbutton").click(function () {
+
        $('.total').append('some new text')
     });
 
