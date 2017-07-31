@@ -1,10 +1,7 @@
-$(document).ready(function(){
-    $(".tbutton").click(function () {
+$(document).ready( function(){
+    $('#button').click(function () {
+       var toAdd =  $('#length').val();
+       $(this).write("highlighted");
 
-        {
-             alert('button clicked');
-           }
-    });
-
-    
+    });  
 });
