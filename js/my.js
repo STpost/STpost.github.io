@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".tbutton").click(function () {
 
-       $('.total').append('some new text')
+       $('.total').write('some new text')
     });
 
     
