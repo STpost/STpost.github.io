@@ -4,7 +4,7 @@ $(document).ready( function(){
     	var wid = $('#width').attr('value')
     	var cos = $('#cost').attr('value')
     	var mult = (parseFloat(len)*parseFloat(wid))
-    	len = cos/mult
+    	len = parseFloat(cos)/parseFloat(mult)
         $('#total').val(len);
     });
 });
