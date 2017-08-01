@@ -3,7 +3,7 @@ $(document).ready( function(){
     	var len = $('#length').attr('value')
     	var wid = $('#width').attr('value')
     	var cos = $('#cost').attr('value')
-    	len = len*wid/cost
+    	len = parseFloat(len)*parseFloat(wid)/parseFloat(cos)
         $('#total').val(len);
     });
 });
