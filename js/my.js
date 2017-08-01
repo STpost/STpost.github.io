@@ -1,7 +1,7 @@
 $(document).ready( function(){
-    $('#text').click( function() {
-    	var len = $('#length').prop('value')
-    	alert(len);
+    $('#calc').click( function() {
+    	var len = $('#length').attr('value')
+    	alert("This should alert");
         $('#total').val(len);
     });
 });
