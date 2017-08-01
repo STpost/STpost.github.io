@@ -1,7 +1,7 @@
 $(document).ready( function(){
     $('#text').click( function() {
-    	var len = $('#length').var()
+    	var len = $('#length').val()
         $(this).toggleClass("highlighted");
-        $('#sum').text(len);
+        $('#sum').val(len);
     });
 });
