@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>STP Rug Calculator</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/my.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
-  </head>
-  <body bgcolor=white>
+	<head>
+	    <title>STP Rug Calculator</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	    <script type="text/javascript" src="js/my.js"></script>
+	    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+	</head>
+  	<body bgcolor=white>
 
-    <table border="0" cellpadding="10">
-      <tr>
-        <td>
-          <img src="images/stp.png">
-        </td>
-        <td>
-          <h1>Hello! Enter the specifications of the rug below</h1>
-        </td>
-      </tr>
-    </table>
+	    <table border="0" cellpadding="10">
+	    	<tr>
+	        	<img src="images/stp.png">
+	    	</tr>
+	    	<tr>
+	      		<h1>Enter the specifications of the rug below</h1>
+	    	</tr>
+	    </table>
 
-        Length:<br>
-        <input type="text" id="length"><br>
-        Width:<br>
-        <input type="text" id="width"><br>
-        Price:<br>
-        <input type="text" id="cost"><br><br>
+	    Length:<br>
+	    <input type="text" id="length"><br>
+	    Width:<br>
+	    <input type="text" id="width"><br>
+	    Price:<br>
+	    <input type="text" id="cost"><br><br>
 
-
-        <br><br>
-    
-        <div id="calc">Calculate</div><br>
-
-        Price per square inch:<br><br>
-        <input type="text" id="total"><br>
-
+	    <input type="button" class="button" value="Calculate" onclick="populateTable();" >
+	    <table id="tbl">
 	</body>
-</html>
 </html>
