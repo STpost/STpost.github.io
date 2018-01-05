@@ -8,10 +8,10 @@ function populateTable() {
     deleteRows(tbl);
 
 	// get starting number for the table
-	if (begin >= 50) begin = begin - 50;
+	if (begin >= 100) begin = begin - 100;
 	else begin = 0;
 
-	while (begin % 5 != 0 && begin > 0) {
+	while (begin % 20 != 0 && begin > 0) {
 		begin--;
 	} 
 
@@ -21,7 +21,7 @@ function populateTable() {
 	var cell2 = row.insertCell(1);
 	cell1.innerHTML = "Total Price";
 	cell2.innerHTML = "Price per Square Inch";
-	for (i = 1; i < 22; i++) {
+	for (i = 1; i < 12; i++) {
 		var row = tbl.insertRow(i);
 		var cell1 = row.insertCell(0);
 		cell1.innerHTML = begin;
@@ -30,8 +30,9 @@ function populateTable() {
 		var price = parseFloat(begin)/parseFloat(mult);
 		cell2.innerHTML = price;
 
-		begin += 5;
+		begin += 20;
 	}
+	// TODO: add dollar sign, reduce decimals
 }
 
 function deleteRows(tbl) {
