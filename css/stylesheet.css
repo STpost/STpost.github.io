@@ -1,17 +1,44 @@
-body {
-    font-family: 'Oswald', sans-serif;    /*font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;*/
-}
-form {
-    display: inline-block;
+html, body {
+    height: 100%;
 }
 
+body {
+    font-family: 'Oswald', sans-serif;    /*font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;*/
+    background-color: white;
+}
+/*form {
+    display: inline-block;
+
+*/
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-.button{
-    background-color: #4CAF50; /* Green */
+.flex-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.column {  
+    height: 100%;
+    width: auto;
+
+}
+
+.flex-item {
+    padding: 5px;
+/*    width: 20px;
+    height: 20px;
+    margin: 10px;
+    line-height: 20px;*/
+    text-align: center;
+}
+
+.button {
+    background-color: #4CAF50; 
     border: none;
     color: white;
     padding: 6px 24px;
@@ -20,7 +47,7 @@ table, th, td{
     display: inline-block;
     font-size: 12px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
@@ -31,7 +58,7 @@ table, th, td{
     color: white; 
 }
 
-.list {
+/*.list {
 	font-family:garamond;
 	color:#cc0000;
 }
@@ -45,6 +72,7 @@ table, th, td{
     width: 200px;
     height: 25px;
 }
+
 
 #text {
     background-color: #0B486B;
@@ -61,4 +89,4 @@ table, th, td{
     -moz-box-shadow: 0 0 8px #FFD700;
     box-shadow: 0 0 8px #FFD700;
     cursor:pointer;
-}
+}*/
