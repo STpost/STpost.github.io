@@ -7,25 +7,34 @@
 	    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 	</head>
-  	<body bgcolor=white>
 
-	    <table border="0" cellpadding="10">
-	    	<tr>
-	        	<img src="images/stp.png">
-	    	</tr>
-	    	<tr>
-	      		<h1>Enter the specifications of the rug below</h1>
-	    	</tr>
-	    </table>
+  	<body>
+		<div class="flex-container">
+			<div class="column">
+			    <div class="flex-item">
+				    <img src="images/stp.png">
+				    <h1>Enter the specifications of the rug below</h1>
+				</div>	
 
-	    Length:<br>
-	    <input type="text" id="length"><br>
-	    Width:<br>
-	    <input type="text" id="width"><br>
-	    Price:<br>
-	    <input type="text" id="cost"><br><br>
+			    <div class="flex-item">
+			    	<label>Length: </label>
+			    	<input type="text" id="length" placeholder="50"><br>
+			    </div>
 
-	    <input type="button" class="button" value="Calculate" onclick="populateTable();" >
-	    <table id="tbl">
+			    <div class="flex-item">	
+			    	<label>Width: </label>
+			    	<input type="text" id="width" placeholder="50"><br>
+			    </div>
+
+			    <div class="flex-item">
+			    	<label>Cost: </label>
+			    	<input type="text" id="cost" placeholder="350"><br><br>
+			    </div>
+
+			    <input type="button" class="button flex-item" value="Calculate" onclick="populateTable()" >
+			    <table id="tbl"> </table>
+			</div>
+		</div>
+
 	</body>
 </html>
